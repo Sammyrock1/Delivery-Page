@@ -1,25 +1,29 @@
-import logo from './logo.svg';
 import './App.css';
+import CustomerStories from './component/coverPageComponent/Customerstory';
+import Features from './component/coverPageComponent/Features';
+import Navbar from './component/coverPageComponent/Navbar';
+import TitleHeader from './component/coverPageComponent/Titleheader';
+import Styles from "./component/Styles/index.module.scss";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+
+
+function App() { 
+  return(
+    <div className={Styles.body}>
+    <div>
+      <Navbar/>
     </div>
-  );
+    <div className='App'>
+      <TitleHeader/>
+    </div>
+    <div>
+    <Features/>
+    </div>
+    <div>
+      <CustomerStories/>
+    </div>
+    </div>
+  )
 }
 
 export default App;
