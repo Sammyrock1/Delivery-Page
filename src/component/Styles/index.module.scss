@@ -26,6 +26,11 @@ span{
     border: none;
     border-radius: 10px;
     font-weight: 600;
+    cursor: pointer;
+}
+.navheader{
+    text-decoration: none;
+    color: #000;
 }
 .Title{
     font-family:  sans-serif,serif;
@@ -54,6 +59,7 @@ input{
 .Titlebody{
    background-color: rgb(255, 242, 217);
    padding: 30px 10px;
+   text-align: center;
 }
 .btn2{
     background-color: orange;
@@ -120,12 +126,26 @@ input{
 .storyTitle{
     margin: 10px 300px;
 }
-.customerStory{
+.customerStory {
 position: relative;
 width: 30%;
 margin-top: 100px;
 margin-left: auto;
 margin-right: auto;
+}
+
+.customerStory::before {
+       background-image: url("../../img/wave.png");
+       background-repeat: no-repeat;
+
+    content: "";
+    position: absolute;
+    right: -70%;
+    /* z-index: 9999; */
+    background-size: contain;
+    width: 50%;
+    height: 25%;
+    top: -30px;
 }
 
 .comment {
@@ -137,8 +157,9 @@ height: 300px;
 clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 52% 78%, 33% 86%, 38% 75%, 0% 75%);
     shape-outside: inset(20px 5px 30px 10px round 50px);
     border-radius: 10px;
-
+   width: 130%;
 }
+
 .customer{
     border-radius: 50%;
  width:70%;
@@ -155,7 +176,7 @@ clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 52% 78%, 33% 86%, 38% 75%, 0% 75%);
 }
 .container2{
     position: absolute;
-    bottom: -30px;
+    bottom: -15px;
     left: 0;
     width: 120px;
     height: 120px;
@@ -167,13 +188,201 @@ clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 52% 78%, 33% 86%, 38% 75%, 0% 75%);
      shape-outside: ellipse(20% 50%);
     // clip-path: ellipse(20% 50%);
 }
-.dot {
-    height: 25px;
-    width: 25px;
+.dotparent{
+    margin-left: 100px;
+}
+
+  .dot {
+    height: 17px;
+    width: 17px;
     background-color: #bbb;
     border-radius: 50%;
     display: inline-block;
   }
-  .dotparent{
-    margin-top: 20px;
+  .dot:not(
+    :first-child
+  ){
+    margin-left: 15px;
   }
+  .dot:first-child{
+    background-color: #ffa500;
+  }
+  .wave{
+    position: absolute;
+    top: 20px
+  }
+.GR{
+    position: absolute;
+    right: -65%;
+    bottom: 60%;
+}
+
+.GR2{
+    position: absolute;
+    top: 35%;
+    left: -25%;
+}
+.Question{
+    align-items: center;
+    margin: 2% 30%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.QuestionTR{
+    align-items: center;
+    margin: 5% 25%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    color: rgb(87, 76, 76)
+}
+.FrequentQuestion{
+    border-top: 2px solid  rgb(167, 162, 162);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+}
+.FrequentQuestion1{
+    border-top: 2px solid  rgb(167, 162, 162);
+    border-bottom: 2px solid  rgb(167, 162, 162);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+}
+.QuestionContainer{
+    margin-top: 80px;
+}
+.Service{
+   padding-top: 100px;
+    display: flex;
+    justify-content: space-evenly;
+    color: #fff;
+    font-weight: 300;
+}
+.about{
+    background-color: rgb(194, 138, 33);
+    padding:  10px;
+}
+.copyright{
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 50px;
+}
+.Contact{
+    color: #fff;
+    display: flex;
+    cursor: pointer;
+}
+.icons{
+    margin-left: 20px;
+    font-size: 30px;
+}
+.delivery{
+    text-decoration: underline;
+    cursor: pointer;
+    color: #fff;
+}
+.span1{
+    font-size: xx-large;
+}
+.passwordinput{
+    position: relative;
+}
+.vissiblity{
+   position: absolute;
+   top: 55%;
+   left: 72%
+    
+}
+.Inputfield{
+    border: 1px solid rgb(168, 163, 163);
+    border-radius: 4px;
+    width: 70%;
+    padding: 20px;
+    font-family: Arial, serif, sans-serif;
+    font-weight: 400;
+    font-size: medium;
+    margin-left: 0px;
+   
+}
+.deliveryLogsTr{
+    display: flex;
+}
+.deliverybanner{
+    width: 50%;
+}
+.logs{
+    width: 100%;
+    margin-left: 120px;
+    margin-top: 65px;
+}
+.createAccount{
+    text-decoration: none;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    color: rgb(2, 2, 80);
+    margin-left: 5px;
+}
+.page{
+    background-color: gray;
+    color: #fff;
+    padding: 5px 5px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-weight: 600;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    margin-left: 4px;
+}
+.logo1{
+    color: rgb(2, 2, 80);
+    font-weight: 900;
+    font-size: 40px;
+    font-family: Arial, serif, sans-serif;
+}
+.forgetPassword{
+    margin-left: 300px;
+    margin-top: 0px;
+    margin-bottom: 50px;
+    color: rgb(2, 2, 80);
+    font-weight: 500;
+}
+.btn3{
+    background-color: rgb(2, 2, 80);
+    color: #fff;
+    cursor: pointer;
+border-style: none;
+width: 80%;
+padding: 15px 0;
+border-radius: 5px;
+font-family: Arial, serif, sans-serif;
+font-weight: 400;
+font-size: 20px;
+}
+.br{
+margin-left: 40%;
+font-size: 19px;
+}
+.loginPara{
+    font-size: 19px;
+    margin-bottom: 5px;
+}
+.auth{
+    margin-top: 45px;
+}
+.googleAuth{
+    color: #746868;
+border: 1px solid gray;
+cursor: pointer;
+width: 80%;
+padding: 15px 0;
+border-radius: 5px;
+font-family: Arial, serif, sans-serif;
+font-weight: 400;
+font-size: 20px;
+}
+
+
