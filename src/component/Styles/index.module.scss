@@ -317,7 +317,7 @@ clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 52% 78%, 33% 86%, 38% 75%, 0% 75%);
 .logs{
     width: 100%;
     margin-left: 120px;
-    margin-top: 65px;
+    margin-top: 50px;
 }
 .createAccount{
     text-decoration: none;
@@ -361,6 +361,11 @@ border-radius: 5px;
 font-family: Arial, serif, sans-serif;
 font-weight: 400;
 font-size: 20px;
+
+&:disabled{
+    opacity: 0.5;
+    cursor: not-allowed;
+}
 }
 .br{
 margin-left: 40%;
@@ -383,6 +388,30 @@ border-radius: 5px;
 font-family: Arial, serif, sans-serif;
 font-weight: 400;
 font-size: 20px;
+}
+.errormge{
+    font-weight: 100;
+    font-size:x-small;
+    display: flex;
+    flex-direction: column;
+    color: red;
+}
+.Spinner{
+    animation-name: spin;
+  animation-duration: 500ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.invalid{
+    margin-top: 20px;
 }
 
 
